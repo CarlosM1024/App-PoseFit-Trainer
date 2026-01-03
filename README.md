@@ -1,61 +1,69 @@
-# Squat-Counter-MediaPipe
+# 🏋️ App-PoseFit-Trainer
+### *AI-Powered Fitness Pose Estimation & Biometric Analysis*
 
-A comprehensive specialized repository for the generation, detection, and 3D pose estimation of **ArUco markers**. This project explores applications from basic 2D identification to advanced 3D spatial positioning using **OpenCV** and **Python**.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
+[![MediaPipe](https://img.shields.io/badge/Framework-MediaPipe-00C853.svg)](https://mediapipe.dev/)
+[![OpenCV](https://img.shields.io/badge/Library-OpenCV-white.svg?logo=opencv&logoColor=white)](https://opencv.org/)
 
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+## 📝 Overview
+**App-PoseFit-Trainer** is a Computer Vision solution designed to analyze and monitor human posture during physical training. By leveraging advanced Deep Learning models, the system detects 33 key body landmarks and calculates real-time biometric angles to help users improve their technique and prevent injuries.
 
----
 
-## 🎯 Project Overview
 
-ArUco markers are binary square fiducial markers used for camera pose estimation. This repository provides a structured approach to implementing these markers in various environments:
+### ✨ Key Features
+- **🏋️ Real-time Pose Detection**: AI-powered analysis of exercise form using MediaPipe
+- **📊 Form Correction**: Instant feedback on posture, alignment, and technique
+- **🔢 Repetition Counter**: Automated counting for various exercises
 
-* **2D Processing:** Marker generation, dictionary selection, and robust identification in image streams.
-* **3D Applications:** Camera calibration, PnP (Perspective-n-Point) algorithms, and real-time pose estimation ($X, Y, Z$ and rotations).
 
 ## 📁 Project Structure
 
 ```text
-ArUco/
-├── 📂 2D/          # Marker generation and basic detection scripts.
-├── 📂 3D/          # Pose estimation, camera calibration, and AR.
-└── 📂 .github/     # GitHub workflow configurations.
+App-PoseFit-Trainer/
+├── app_PoseFit_Trainer/  # Core application logic
+├── pose_projects/        # Experimental scripts and detection modules
+│   └── PoseModule.py     # Main class for detection and angle calculation
+├── assets/               # Sample videos and visual resources
+├── LICENSE               # MIT License
+└── README.md             # Project documentation
 ```
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-* **Python 3.x**
-* **OpenCV contrib** (required for ArUco modules):
-  ```bash
-  pip install opencv-contrib-python numpy
-  ```
+* **Python 3.9**
+* **Webcam (for live analysis)**
+  
 ### Installation
 1. Clone the repository:
 
 ````bash
-git clone [https://github.com/CarlosM1024/ArUco.git](https://github.com/CarlosM1024/ArUco.git)
-cd ArUco
+git clone [https://github.com/CarlosM1024/App-PoseFit-Trainer.git](https://github.com/CarlosM1024/App-PoseFit-Trainer.git)
+cd App-PoseFit-Trainer
 ````
 
-2. Camera Calibration (For 3D): Before using the 3D scripts, ensure you calibrate your camera using the scripts in 3D/calibration/ to obtain your camera_matrix and dist_coeffs.
+2. Create and activate a virtual environment:
+````bash
+python -m venv .venv
+# Windows
+.\.venv\Scripts\activate
+# Linux/Mac
+source .venv/bin/activate
+````
+
+3. Install dependencies:
+````bash
+pip install -r requirements.txt
+````
 
 
 ## 🛠️ Usage
 
-### 2D Detection
-Navigate to the 2D folder and run the detection script:
+To execute App-PoseFit-Trainer:
 
 ````Bash
-python 2D/detect_markers.py
-````
-
-### 3D Pose Estimation
-To visualize the 3D axis on a detected marker:
-
-````Bash
-python 3D/pose_estimation.py
+python app.py
 ````
 
 
