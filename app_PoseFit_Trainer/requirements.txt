@@ -1,0 +1,5 @@
+flet==0.28.3
+opencv-python==4.8.1.78
+mediapipe== 0.10.9
+Pillow==11.3.0
+numpy==2.0.2
