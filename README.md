@@ -81,3 +81,9 @@ If you'd like to contribute to this project, feel free to submit a pull request.
 3.  Commit your changes.
 4.  Push to the branch.
 5.  Submit a pull request.
+
+##👤 Author
+
+**Carlos Antonio Martinez Miranda**
+
+GitHub: (@CarlosM1024)[https://github.com/CarlosM1024]
