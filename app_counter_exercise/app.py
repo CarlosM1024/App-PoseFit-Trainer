@@ -6,11 +6,11 @@ import exerciseController as ec
 
 def main(page: ft.Page):
     """
-    Función principal de Flet con UI mejorada
+    Función principal de Flet con UI
     """
     
     # Configuración de la ventana
-    page.title = "AI Trainer"
+    page.title = "PoseFit Trainer"
     page.theme_mode = ft.ThemeMode.DARK
     page.window_width = 1600
     page.window_height = 900
@@ -150,7 +150,7 @@ def main(page: ft.Page):
         content=ft.Row([
             ft.Icon(ft.Icons.FITNESS_CENTER, size=40, color=ft.Colors.CYAN_400),
             ft.Text(
-                "IA TRAINER ",
+                "PoseFit Trainer",
                 size=36,
                 weight=ft.FontWeight.BOLD,
                 color=ft.Colors.CYAN_400,
@@ -327,7 +327,7 @@ def main(page: ft.Page):
                 content=ft.Column([
                     ft.Divider(color=ft.Colors.WHITE24),
                     ft.Text(
-                        "AI Trainer v1.0",
+                        "PoseFit Trainer v1.0",
                         size=12,
                         color=ft.Colors.WHITE54,
                         text_align=ft.TextAlign.CENTER,
